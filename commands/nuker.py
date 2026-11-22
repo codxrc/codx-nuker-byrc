@@ -21,7 +21,7 @@ print("This will only work with bot tokens")
 guild_id = input("Guild ID? ")
 themessage = input("Enter message [Enter for default]: ")
 if themessage == "":
-    themessage = @everyone\n**codx was here https://discord.gg/r5fPVakywE** 
+    themessage = "@everyone\n**codx was here https://discord.gg/r5fPVakywE"** 
     ("Enter new server name [Enter for default]: ")
 if sname == "":
     sname = "codx was here"
