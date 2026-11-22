@@ -128,7 +128,7 @@ async def create_channels_and_spam(session):
     }
     create_channel_url = f'https://discord.com/api/v9/guilds/{guild_id}/channels'
     create_channel_payload = {
-        'name': "codx-was-here',
+        'name': 'codx-was-here',
         'type': 0
     }
     create_webhook_url = f'https://discord.com/api/v9/channels/{{channel_id}}/webhooks'
